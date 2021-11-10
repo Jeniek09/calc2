@@ -19,3 +19,18 @@ class Calculator:
         """ multiply two numbers and store the result"""
         self.result = value_a * value_b
         return self.result
+
+    def divide_numbers(self, value_a, value_b):
+        """ divide two numbers and store the result"""
+        self.result = value_a / value_b
+        return self.result
+
+    def add_numbers(self, value_a, value_b):
+        """ adds number for result"""
+        self.result = self.result + value_a + value_b
+        return self.result
+
+    def subtract_numbers(self, value_a, value_b):
+        """subtracts numbers for result"""
+        self.result = value_a - value_b
+        return self.result
