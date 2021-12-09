@@ -7,12 +7,7 @@ class Calculator:
         """ Get Result of Calculation"""
         return self.result
 
-    def add_number(self, value_a):
-        """ adds number to result"""
-        self.result = self.result + value_a
-        return self.result
-
-    def add_numbers(self, value_a, value_b):
+    @staticmethod
+    def add_numbers(value_a, value_b):
         """ adds two numbers and store the result"""
-        self.result = value_a + value_b
-        return self.result
+        return value_a + value_b
