@@ -17,22 +17,23 @@ completion flash message
 ***
 Screenshots: 
 * <b>Calculator Webpage that is created</b> 
-![](C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_webpage.PNG)
+<img src="C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_webpage.PNG"/>
 <br>
 <br>
 * <b>When the user does not input value 1:</b>
-![](C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_value1_missing.PNG)
+<img src="C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_value1_missing.PNG"/>
+<br>
 <br>
 * <b> When the user does not input value 2:</b> 
-![](C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_value2_missing.PNG)
+<img src="C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_value2_missing.PNG"/>
 <br>
 <br>
 * <b>When the user fails to input both the values:</b>
-![](C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_value1&2_missing.PNG)
+<img src="C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_value1&amp;2_missing.PNG"/>
 <br>
 <br>
 * <b>Calculation Completion Flash message:</b>
-![](C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\Completion_Flash.PNG)
+<img src="C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\Completion_Flash.PNG"/>
 
 <b>Note:</b> Please note the input fields already take a default value as seen in the screenshot, these error flash messages 
 would appear if the user accidentally takes them off while running the calculator
