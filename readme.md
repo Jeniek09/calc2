@@ -15,24 +15,38 @@ Jenie Kunnipparampil
 completion flash message
 <br>
 ***
+
 ## Screenshots: 
+
 * <b>Calculator Webpage that is created</b> 
 ![ScreenShot](./app/static/screenshots/flash_message_webpage.PNG)
+
 <br>
 <br>
+
 * <b>When the user does not input value 1:</b>
+
 ![ScreenShot](./app/static/screenshots/flash_message_value1_missing.PNG)
+
 <br>
 <br>
+
 * <b> When the user does not input value 2:</b> 
+
 ![ScreenShot](./app/static/screenshots/flash_message_value2_missing.PNG)
+
 <br>
 <br>
+
 * <b>When the user fails to input both the values:</b>
+
 ![ScreenShot](./app/static/screenshots/flash_message_both_missing.PNG)
+
 <br>
 <br>
+
 * <b>Calculation Completion Flash message:</b>
+
 ![ScreenShot](./app/static/screenshots/Completion_Flash.PNG)
 
 <b>Note:</b> Please note the input fields already take a default value as seen in the screenshot, these error flash messages 
