@@ -15,7 +15,7 @@ Jenie Kunnipparampil
 completion flash message
 <br>
 ***
-Screenshots: 
+## Screenshots: 
 * <b>Calculator Webpage that is created</b> 
 <img src="C:\Users\jenie\PycharmProjects\calc2\app\static\screenshots\flash_message_webpage.PNG"/>
 <br>
