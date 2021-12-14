@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Results Page{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1 style="text-align:center;font-size:85px;">Results Page</h1>
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Operation completed successfully!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class = "buttonHolder">
+        <h1> Calculation Output:</h1>
+        <strong style = "font-size:20px;">Value 1: </strong> {{ value1 }} <br>
+        <strong style = "font-size:20px;">Value 2: </strong> {{ value2 }} <br>
+        <strong style = "font-size:20px;">Operation: </strong> {{ operation }} <br>
+        <strong style = "font-size:20px;">Result: </strong> {{ result }}
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
