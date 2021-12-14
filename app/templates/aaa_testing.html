@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}Python{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">AAA Testing</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Importance of Testing</h2>
+            <div class="split">
+                <div>
+                    <p style="margin-top: 5px;">Testing provides a practical feedback loop for development and shows how individual
+                        components of an application affects the results. Therefore, to conduct a thorough test of
+                        code we should follow the AAA testing pattern.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">AAA Testing</h2>
+            <div class="split">
+                <div>
+                    <p style="margin-top: 5px;">Arrange-Act-Assert pattern is a constructive way to structure test cases to test the calculator code.
+                    <ul style="text-align: justify;padding-left: 50px;padding-right: 50px;font-size: 25px;">
+                        <li style="text-align: justify;">
+                            <p>
+                                <b>Arrange:</b> it is the first step to start the testing process.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <b>Act: </b> The desired method which will be tested in this testing.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Assert: </b> is the expected outcome for the conducted test above in the act step.
+                            </p>
+                        </li>
+                    </ul>
+                    <img src="../static/images/aaa_testing.PNG" alt="aaa_testing" style="height: 250px; width: 500px; margin: auto;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">AAA Testing Steps</h2>
+            <div class="split">
+                <div>
+                    <ol style="text-align: justify;padding-left: 50px;padding-right: 50px;font-size: 25px;">
+                        <li style="text-align: justify;">
+                            <p>
+                                For the calculator program as seen in the image above, the first part of starting
+                                the testing is by instantiating the class (calc) in the code.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Followed by the main method/function that is to be tested to see if the calculator
+                                is interpreting the code correctly. In this case it was the addition method that is
+                                called to be tested in the Act step.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                And lastly to verify whether the expected answer/result is met, you insert the “assert”
+                                code and specify the anticipated answer. For the example mentioned, when adding
+                                value_a = 4 to base value 0 the expected answer should be 4.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                This AAA test was further tested with multiple values and for different
+                                operations such as multiplication, division, and subtraction.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Now to make sure that the syntax is maintained and is consistent throughout
+                                the program, after each input of code for the calculator it is recommended to
+                                conduct a “pytest –cov –pylint test”. Below is the image of the test coverage
+                                file report.
+                            </p>
+                        </li>
+                    </ol>
+                    <img src="../static/images/cov_file.PNG" alt="pylint_cov" style="height: 250px; width: 500px; margin: auto;"/>
+                    <p>
+                        The code functionality of this calculator will be tested further with an external
+                        csv data files with thousands of line items for each operation – addition, subtraction,
+                        multiplication, and division. And the same process of AAA testing will be applied to
+                        test its functionality.
+                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--<a href="/good/1.0/2.0">One Plus Two Good</a><br><a href="/bad/1/2">One Plus Two Bad</a>-->
+{% endblock %}

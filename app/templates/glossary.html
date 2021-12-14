@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}Python{% endblock %}
+{% block head %}
+    {{ super() }}
+<!--    <style type="text/css">-->
+<!--        .important { color: #336699; }-->
+<!--    </style>-->
+{% endblock %}
+{% block content %}
+        <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">Glossary - Object Oriented (OO) Terminology/ Definitions</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section  class="bg-darkgrey">
+        <h2 style="padding-left: 50px;">OOP Terminology:</h2>
+        <ul style="text-align: justify;padding-left: 50px;padding-right: 50px;font-size: 25px;">
+            <li style="text-align: justify;">
+                <p>
+                    <b>Instantiation:</b> Instantiating a class is creating a copy of the class which inherits all class variables and methods.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Object: </b> An object (instance) is an instantiation of a class. When class is defined, only the description for the object is defined.
+                    Therefore, no memory or storage is allocated.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Attributes: </b> also known as variables inside the class so that all objects created from that class would have these attributes by default.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Class: </b> can be considered as the blueprint or a bag for the object. It contains all the details about the methods
+                    and functionality so that every object created can access the class.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Base class: </b> Is the parent of the child classes created in the python.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Derived class: </b> Child class is the class that inherits from another class, and it is also called derived class.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Methods: </b> are functions defined inside the body of a class. They are used to define the behaviors of an object.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Static method: </b> property or method that is not bound to instance, it is used to perform utility tasks in isolation.
+                    They have limited use because they don’t have access to the attributes of an object. Static method is defined by using the
+                    @staticmethod decorator or the staticmethod() function to define a static method.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Instance method: </b> The instance method acts on an object’s attributes; it is bound to the object of a class.
+                    It can modify the object state by changing the value of instance variables because it can access and modify both class and instance variable.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Class method: </b> Used to access or modify the class state. It can modify the class state by changing the value of a class
+                    variable that would apply across all the class objects.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Namespace: </b> A namespace is basically a system to make sure that all the names in a program are unique and
+                    can be used without any conflict.  When a class definition is entered, a new namespace is created, and used as the
+                    local scope for all assignments to local variables go into this new namespace.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Constructor: </b> Constructors are generally used for instantiating an object. The task of constructors is
+                    to initialize (assign values) to the members of the class when an object of the class is created. In Python the __init__()
+                    method is called the constructor and is always called when an object is created.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+<!--<a href="/good/1.0/2.0">One Plus Two Good</a><br><a href="/bad/1/2">One Plus Two Bad</a>-->
+{% endblock %}

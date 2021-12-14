@@ -1,0 +1,413 @@
+/*****************************************************************************/
+:root{
+    --clr-primary-200:#F3EED9;
+    --clr-primary-400:#824936;
+    --clr-primary-500:#ED820E;
+
+    --clr-neutral-100:#FFF;
+    --clr-nuetral-300:#7E7E7E;
+    --clr-nuetral-900:#222C2A;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Playfair Display', serif;
+}
+
+/*****************************************************************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*****************************************************************************/
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+/*****************************************************************************/
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/*****************************************************************************/
+h1{
+    color: var(--clr-primary-500);
+    font-family: var(--ff-accent);
+    font-weight: 800;
+    line-height: 1;
+}
+@media all and (max-width: 768px) {
+    h1{
+        color: var(--clr-primary-500);
+        font-family: var(--ff-accent);
+        font-weight: 800;
+        line-height: 1;
+
+    }
+}
+/*****************************************************************************/
+h2,
+h3{
+    color: var(--clr-primary-400);
+    font-family: var(--ff-accent);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 2em;
+    font-size: 50px;
+    /*   padding-bottom: 1em;*/
+}
+
+@media all and (max-width: 768px) {
+    h2,
+    h3{
+        color: var(--clr-primary-400);
+        font-family: var(--ff-accent);
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 2em;
+        font-size: x-large;
+    }
+}
+
+/*****************************************************************************/
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+    padding-top: 1em;
+    font-size: x-large;
+}
+@media all and (max-width: 768px) {
+    p {
+        margin-bottom: 1em;
+        text-align: justify;
+        padding-top: 1em;
+        font-size: large;
+    }
+}
+/*****************************************************************************/
+img {
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+@media all and (max-width: 768px) {
+    img {
+        display: block;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+/*****************************************************************************/
+.text-center {
+    text-align: center;
+    font-size: 50px;
+}
+
+@media all and (max-width: 768px) {
+    .text-center {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+/*****************************************************************************/
+header,
+section {
+    padding: 4rem 0;
+}
+@media (min-width: 40em) {
+    header,
+    section {
+        padding: 7rem 0;
+    }
+}
+
+/*****************************************************************************/
+@-webkit-keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1); opacity: 1;}
+}
+
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+/*==========ROLL-OUT==========*/
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+
+main{
+    width: 100%;
+    overflow: hidden;
+}
+.hero{
+    width: 100%;
+    /*max-width: 1200px;*/
+    height: 400px;
+    text-align: center;
+    position: relative;
+    color: var(--clr-primary-500);
+    font-family: var(--ff-primary);
+}
+
+.hero h1{
+    font-size: 4.1em;
+    margin: auto;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.hero p{
+    font-size: 1.5em;
+    margin: auto;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.hero img{
+    width: 100%;
+}
+.bar{
+    width: 100%;
+    height: 200px;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 60px;
+    -ms-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    -webkit-animation: roll-out 1.2s ease-out ;
+    -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ;
+}
+.hero h1, .hero p{
+    -webkit-animation: scale-in 1.3s ease-out;
+    -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out;
+}
+
+
+@media all and (max-width: 768px) {
+    .hero{
+        height: 25vw;
+    }
+    .bar{
+        height: 26vw;
+        top: 10vw;
+    }
+    .hero h1{
+        font-size: 6vw;
+        top: 13vw;
+    }
+    .hero p{
+        font-size: 1vw;
+        top: 27vw;
+    }
+
+}
+
+/*****************************************************************************/
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+/*@media all and (max-width: 768px) {
+    .container ul{
+        color: grey;
+        font-size: x-large;
+        text-align: center;
+        font-style:normal;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+}*/
+
+.container--narrow {
+    max-width: 34rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+/*****************************************************************************/
+.embed-container {
+    position: relative;
+    margin-top: 5%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*****************************************************************************/
+.bg-header {
+    background-color: #F5F2D0;
+    font-size: 70px;
+}
+
+@media all and (max-width: 768px) {
+    .bg-header {
+        background-color: #F5F2D0;
+        font-size: 40px;
+    }
+}
+
+/*****************************************************************************/
+.bg-light {
+    background-color: var(--clr-primary-200);
+}
+
+/*****************************************************************************/
+.bg-primary {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+}
+
+/*****************************************************************************/
+.bg-dark {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-nuetral-300);
+}
+/*****************************************************************************/
+.bg-darkgrey {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-nuetral-300);
+}
+/*****************************************************************************/
+.bg-primary h2,
+.bg-dark h2 {
+    color: var(--clr-primary-200);
+}
+
+
+/*****************************************************************************/
+/*Navigation Bar CSS*/
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #ED820E;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: dimgrey;
+    color: white;
+}
+
+/*****************************************************************************/
+/* footer class */
+.container-footer {
+    margin: auto;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+#footer {
+    background-color: #333;
+    padding: 16px 10px;
+}
+
+#footer-images ul {
+    padding: 0;
+}
+
+#footer-images li {
+    list-style: none;
+    margin: 0 5px;
+    display: block;
+}
+
+#footer-images ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0;
+}
+
+

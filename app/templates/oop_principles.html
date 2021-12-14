@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}Python{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">OOP Principles</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Object Oriented Programming</h2>
+            <div class="split">
+                <div>
+                    <p style="margin-top: 5px;">An approach to designing and building applications that are flexible,
+                        natural, well-crafted, and testable by focusing on objects that interact
+                        efficiently with one another. It is a widely used programming concept that
+                        reduces development times—making it easier to read, reuse, and maintain your code.
+                    </p>
+                    <p style="margin-top: 5px;">There are four major principles that helps with clean object-oriented coding –
+                        Encapsulation, Abstractions, Inheritance and Polymorphism
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Encapsulation</h2>
+            <div class="split">
+                <div>
+                    <p>It is a way to hide the information (or encapsulate) of the data and functions
+                        implementation details within a class, it means that when such object is instantiated
+                        that it will contain its properties and methods in that object
+                    </p>
+                    <p>Example: In the Calculator program, the class Calculation is an example of encapsulation
+                        as it encompasses all the data in the object; the instance properties
+                        (starting with “def __init__”) whenever calculation is instantiated
+                        these are the properties that will be independent, and this is called encapsulation.
+                    </p>
+                </div>
+                <div>
+                    <img src="../static/images/encapsulation.PNG" alt="encapsulation" style = "padding-top: 50px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Abstraction</h2>
+            <div class="split">
+                <div>
+                    <p>Abstraction in Object-Oriented Programming helps to reduce the complexity of the design
+                        and implementation process of software. It is the process of hiding the real implementation
+                        of an application from the user and showing only essential features. It is achieved by using
+                        abstract classes and methods. In a way an extension to encapsulation feature as Abstraction
+                        hides the implementation details.
+                    </p>
+                    <p>Example: In the calculator.py the class calculation is the blueprint for other class,
+                        it allows to create set of methods within any child classes built from the abstract (base) class.
+                    </p>
+                </div>
+                <div>
+                    <img src="../static/images/abstraction.PNG" alt="abstraction" style = "padding-top: 50px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Polymorphism</h2>
+            <div class="split">
+                <div>
+                    <p>Polymorphism defines the ability to take different forms. Meaning a single method can behave
+                        different depending on the type of object that calls it. It allows us to define methods in
+                        the child class with the same name as defined in their parent class.
+                    </p>
+                    <p>Example:  In the Calculator program the built-in function len() calculates the length of an
+                        object depending upon its type. If an object is a string, it returns the count of characters,
+                        and if an object is a list, it returns the count of items in a list. In the calculator this
+                        was used to count the history of calculation.
+                    </p>
+                </div>
+                <div>
+                    <img src="../static/images/polymorphism.PNG" alt="polymorphism" style = "padding-top: 50px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Inheritance</h2>
+            <div class="split">
+                <div>
+                    <p>A relationship between classes whereby child (or derived) classes inherit all the members
+                        of the parent (or base) class. Inheritance is a powerful feature in object-oriented programming
+                        as It refers to defining a new class with little or no modification to an existing class.
+                    </p>
+                    <p>Example:  In the calculator project – addition, subtraction, multiplication, and division
+                        are the child classes, and the calculation class is the parent class (Base class) as it
+                        provides functionality to child classes.
+                    </p>
+                </div>
+                <div>
+                    <img src="../static/images/inheritance.PNG" alt="inheritance" style = "padding-top: 50px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
