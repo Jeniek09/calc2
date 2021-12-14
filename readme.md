@@ -8,46 +8,46 @@ Class IS601 - Web Systems Development
 Jenie Kunnipparampil
 ***
 ## Updates - Version 3.0(Update Date: 2021-12-14)
-* Created a new webpage hosted through nginx and flask that makes use for python in the back end to run the simple calculator program 
-. This program contains all the calculator functions and tests required to run the calculator on the webpage. 
+* Created a new webpage hosted through nginx and flask that makes use of python in the back end to run the simple calculator program. 
+This program contains all the calculator functions and tests required to run the calculator on the webpage 
 * Added flash messages to throw up an error when the calculator is missing input values 
 * On completion of the calculation, the calculator takes you to the result page which shows the results along with the 
 completion flash message
 <br>
-***
+
 
 ## Screenshots: 
 
 * <b>Calculator Webpage that is created</b> 
-![ScreenShot](./app/static/screenshots/flash_message_webpage.PNG)
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_webpage.PNG)</kbd>
 
 <br>
 <br>
 
 * <b>When the user does not input value 1:</b>
 
-![ScreenShot](./app/static/screenshots/flash_message_value1_missing.PNG)
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_value1_missing.PNG)</kbd>
 
 <br>
 <br>
 
 * <b> When the user does not input value 2:</b> 
 
-![ScreenShot](./app/static/screenshots/flash_message_value2_missing.PNG)
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_value2_missing.PNG)</kbd>
 
 <br>
 <br>
 
 * <b>When the user fails to input both the values:</b>
 
-![ScreenShot](./app/static/screenshots/flash_message_both_missing.PNG)
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_both_missing.PNG)</kbd>
 
 <br>
 <br>
 
 * <b>Calculation Completion Flash message:</b>
 
-![ScreenShot](./app/static/screenshots/Completion_Flash.PNG)
+<kbd>![ScreenShot](./app/static/screenshots/Completion_Flash.PNG)</kbd>
 
 <b>Note:</b> Please note the input fields already take a default value as seen in the screenshot, these error flash messages 
 would appear if the user accidentally takes them off while running the calculator
