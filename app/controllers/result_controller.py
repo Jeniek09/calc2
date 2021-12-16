@@ -7,4 +7,4 @@ class ResultController(ControllerBase):
     @staticmethod
     def get():
         """Result page Controller"""
-        return render_template('results.html')
+        return render_template('output.html')

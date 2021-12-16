@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Output Page{% endblock %}
+{% block title %}Results{% endblock %}
 {% block head %}
     {{ super() }}
     <style type="text/css">
@@ -7,21 +7,39 @@
     </style>
 {% endblock %}
 {% block content %}
-    <h1 style="text-align:center;font-size:85px;">Output Page</h1>
+    <h1 style="text-align:center;font-size:85px;">Result Page</h1>
     <div class="alert alert-success" role="alert">
       <h4 class="alert-heading">Well done!</h4>
       <p>Operation completed successfully!</p>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class = "buttonHolder">
-        <h1> Calculation Output:</h1>
-        <strong style = "font-size:20px;">Value 1: </strong> {{ value1 }} <br>
-        <strong style = "font-size:20px;">Value 2: </strong> {{ value2 }} <br>
-        <strong style = "font-size:20px;">Operation: </strong> {{ operation }} <br>
-        <strong style = "font-size:20px;">Result: </strong> {{ result }}
-    </div>
-    <br>
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Calculation Output:</h2>
+                <div>
+                    <div class = "buttonHolder">
+<!--                        <h1> Calculation Output:</h1>-->
+                        <strong style = "font-size:20px;">Value 1: </strong> {{ value1 }} <br>
+                        <strong style = "font-size:20px;">Value 2: </strong> {{ value2 }} <br>
+                        <strong style = "font-size:20px;">Operation: </strong> {{ operation }} <br>
+                        <strong style = "font-size:20px;">Result: </strong> {{ result }}
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Calculator History</h2>
+                 {% if data %}
+                    <table class="dataframe mystyle" style="border:1px solid black;">
+                       {% for item in data %}
+                            {{titles[loop.index-3]}}
+                            {{ item|safe }}
+                        {% endfor %}
+                    </table>
+                    {% else %}
+                        {{super()}}
+                        <h1>There are no calculations</h1>
+                {% endif %}
+        </div>
+    </section>
 {% endblock %}

@@ -7,7 +7,7 @@ Class IS601 - Web Systems Development
 ## Creator
 Jenie Kunnipparampil
 ***
-## Project Video URL - [Youtube Video](http://thejenieproject.eastus.azurecontainer.io)
+## Project Video URL - [Project Video](https://njit0-my.sharepoint.com/:v:/g/personal/jjk48_njit_edu/ETOqfyg_uqxJuNk766awU2oBkot_F9U-MVnhDeqtfD0rHQ)
 
 ***
 ## Updates - Version 4.0 (Update Date: 2021-12-15)
@@ -165,7 +165,6 @@ A list of technologies used within the project:
 
 ## Reference
 ***
-* [CSV Table Repo](https://github.com/derekeder/csv-to-html-table)
 * [Responsive Webpage Design Tutorial](https://www.youtube.com/watch?v=bn-DQCifeQQ&list=WL&index=1&ab_channel=KevinPowell)
 * [Page footer](https://stackoverflow.com/questions/42742570/aligning-images-in-footer)
 

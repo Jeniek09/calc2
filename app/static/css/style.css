@@ -379,13 +379,14 @@ main{
 }
 
 /*****************************************************************************/
-/* footer class */
+ footer class
 .container-footer {
     margin: auto;
     width: 100%;
     bottom: 0;
     text-align: center;
     color: white;
+    height: 2.5rem;
 }
 
 #footer {
@@ -410,5 +411,42 @@ main{
     margin-bottom:0;
 }
 
+
 .buttonHolder{ text-align: center; }
 
+/*table, th, td {*/
+/*  border: 1px solid black;*/
+/*}*/
+
+table, tr{
+     display: table;
+     width:100px !important;
+     min-width:100px!important; //optional
+     max-width:100px !important; //optional
+     height:auto;
+     border: 1px solid black;
+     margin-left:auto;
+     margin-right:auto;
+  }
+
+
+.mystyle {
+    font-size: 11pt;
+    font-family: Arial;
+    border-collapse: collapse;
+    border: 1px solid silver;
+
+}
+
+.mystyle td, th {
+    padding: 5px;
+}
+
+.mystyle tr:nth-child(even) {
+    background: #E0E0E0;
+}
+
+.mystyle tr:hover {
+    background: silver;
+    cursor: pointer;
+}
