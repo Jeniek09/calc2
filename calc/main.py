@@ -1,6 +1,7 @@
 """ This is the main run file for pytest"""
 import sys
 import time
+from datetime import date
 import pytest
 
 now = int(time.time())
@@ -14,6 +15,8 @@ class MyPlugin:
         """ This is the sessionfinish docstring"""
         print("*** test run reporting finishing")
         print(file_name)
+        today = date.today()
+        print("Today date is: ", today)
 
 if __name__ == "__main__":
     sys.exit(pytest.main(["-qq","-vv","--log-level=INFO","--junit-xml=/home/myuser/tests/logfile/"+file_name], plugins=[MyPlugin()]))

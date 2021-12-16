@@ -7,33 +7,82 @@ Class IS601 - Web Systems Development
 ## Creator
 Jenie Kunnipparampil
 ***
-## Updates - Version 3.0(Update Date: 2021-12-14)
-* Created a new webpage hosted through nginx and flask that makes use for python in the back end to run the simple calculator program 
-. This program contains all the calculator functions and tests required to run the calculator on the webpage. 
+## Project Video URL - [Youtube Video](http://thejenieproject.eastus.azurecontainer.io)
+
+***
+## Updates - Version 4.0 (Update Date: 2021-12-15)
+* This version of the website incorporates the simple python calculator that we previously added along with the functionality to 
+save the output in an internal csv file
+* The csv file is then displayed on the Results page as an output
+* Please view the above video that does a walkthrough of the entire website and the basic calculator functions
+* The screenshots below display the pytest, pylint and coverage outcome for this project
+<br>
+***
+
+### Github Location - Web Calculator
+* [Github URL](https://github.com/Jeniek09/calc2/tree/project3)
+
+## Screenshots: 
+
+* <b>Basic Calculator Pylint Test Results</b> 
+<kbd>![ScreenShot](./app/static/screenshots/webcalc_pylint.PNG)</kbd>
+
+<br>
+<br>
+
+* <b>Basic Calculator Coverage Test Results</b>
+
+<kbd>![ScreenShot](./app/static/screenshots/webcalc_cov.PNG)</kbd>
+
+<br>
+<br>
+
+* <b>Basic Calculator Coverage Test Results</b>
+
+<kbd>![ScreenShot](./app/static/screenshots/webcalc_pytest.PNG)</kbd>
+
+
+## Updates - Version 3.0 (Update Date: 2021-12-14)
+* Created a new webpage hosted through nginx and flask that makes use of python in the back end to run the simple calculator program. 
+This program contains all the calculator functions and tests required to run the calculator on the webpage 
 * Added flash messages to throw up an error when the calculator is missing input values 
 * On completion of the calculation, the calculator takes you to the result page which shows the results along with the 
 completion flash message
 <br>
 ***
+
 ## Screenshots: 
+
 * <b>Calculator Webpage that is created</b> 
-![ScreenShot](./app/static/screenshots/flash_message_webpage.PNG)
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_webpage.PNG)</kbd>
+
 <br>
 <br>
+
 * <b>When the user does not input value 1:</b>
-![ScreenShot](./app/static/screenshots/flash_message_value1_missing.PNG)
+
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_value1_missing.PNG)</kbd>
+
 <br>
 <br>
+
 * <b> When the user does not input value 2:</b> 
-![ScreenShot](./app/static/screenshots/flash_message_value2_missing.PNG)
+
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_value2_missing.PNG)</kbd>
+
 <br>
 <br>
+
 * <b>When the user fails to input both the values:</b>
-![ScreenShot](./app/static/screenshots/flash_message_both_missing.PNG)
+
+<kbd>![ScreenShot](./app/static/screenshots/flash_message_both_missing.PNG)</kbd>
+
 <br>
 <br>
+
 * <b>Calculation Completion Flash message:</b>
-![ScreenShot](./app/static/screenshots/Completion_Flash.PNG)
+
+<kbd>![ScreenShot](./app/static/screenshots/Completion_Flash.PNG)</kbd>
 
 <b>Note:</b> Please note the input fields already take a default value as seen in the screenshot, these error flash messages 
 would appear if the user accidentally takes them off while running the calculator
@@ -85,7 +134,7 @@ principles of Object-oriented programming in Python.
 * S.O.L.I.D. 
   * This page explains further about the five object-oriented design principles
 
-### Github Location
+### Github Location - Internet History Webpage
 * [Github URL](https://github.com/Jeniek09/Internet-history)
 
 ## How to Use:
@@ -107,14 +156,16 @@ A list of technologies used within the project:
     * A git repository hosting service that enables version control and lets multiple users make separate changes to the webpages at the same time.
 * [Azure for Students](https://portal.azure.com/#home)
     * Microsoft's public cloud computing platform that allows you to deploy a web application and make it available to your customers on the internet.
-* [Pycharm](https://www.jetbrains.com/pycharm/) 
+* [Pycharm](https://www.jetbrains.com/pycharm/) : Version 2021.2.3
   * PyCharm is designed by programmers, for programmers, to provide all the tools you need for productive Python development.
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/) : Version 2.0.3
+  * Flask is an API of Python that allows us to build up web-applications.
+* [nginx](https://www.nginx.com/) : Version 2.0.3
+  * NGINX accelerates content and application delivery, improves security, facilitates availability and scalability for the busiest web sites on the Internet.
 
 ## Reference
 ***
+* [CSV Table Repo](https://github.com/derekeder/csv-to-html-table)
 * [Responsive Webpage Design Tutorial](https://www.youtube.com/watch?v=bn-DQCifeQQ&list=WL&index=1&ab_channel=KevinPowell)
 * [Page footer](https://stackoverflow.com/questions/42742570/aligning-images-in-footer)
 
-## What's Next?
-***
-* Use data to create interactive graphs and models

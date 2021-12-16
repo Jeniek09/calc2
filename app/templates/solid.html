@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}SOLID{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">S.O.L.I.D.</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">SOLID Object Oriented Design</h2>
+            <div class="split">
+                <div>
+                    <p style="margin-top: 5px;">SOLID is an acronym for the five object-oriented design principles.
+                        These principles establish practices that help develop software with factors for
+                        maintaining and extending in the project. Incorporating these principles and practices
+                        one can avoid refactoring code, code smell and overall organize your code.
+                    </p>
+                    <p style="margin-top: 5px; margin-left: 50px">
+                        S : Single Responsibility Principle<br/>
+                        O : Open-Closed Principle<br/>
+                        L : Liskov Substitution Principle<br/>
+                        I : Interface Segregation Principle<br/>
+                        D : Dependency Inversion Principle<br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Single Responsibility Principle (SRP)</h2>
+            <div class="split">
+                <div>
+                    <p>A function should perform one and only one task according to this principle.
+                    </p>
+                    <p>Example: when calling static method, if the single responsibility rule is well established
+                        then it will return only one action upon calling that class.
+                    </p>
+                </div>
+                <div>
+                    <img src="../static/images/srp.PNG" alt="srp" style = "padding-top: 50px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Open/Closed Principle (OCP)</h2>
+            <div class="split">
+                <div>
+                    <p>Functions and classes should be open for extension and closed modification.
+                        Basically, one should be able to add on the function but not go and modify
+                        the code each time something gets added.
+                    </p>
+                    <p>Example: in the addition calculator test you can have a number (value_a) added to 0
+                        or add a bunch of numbers together (value_a + value_b…).
+                    </p>
+                </div>
+                <div>
+                    <img src="../static/images/ocp.PNG" alt="ocp" style = "padding-top: 50px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Liskov Substitution Principle (LSP)</h2>
+            <div class="split">
+                <div>
+                    <p>Defines that object of a superclass shall be replaceable with objects
+                        of its subclasses without breaking the application.
+                    </p>
+                    <p>Example: Example: in the calc folder the calculation.py this calculation class is
+                        extended in multiplication or subtraction calculation. Parent class should never
+                        depend on child class, but child class won’t be able to execute the result without
+                        the parent class.
+                    </p>
+                </div>
+                <div>
+                    <img src="../static/images/lsp.PNG" alt="lsp" style = "padding-top: 50px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Interface Segregation Principle (ISP)</h2>
+            <div class="split">
+                <div>
+                    <p>The goal is to not include any unwanted methods in an interface.
+                        Because declaring methods in an interface that the client doesn’t need pollutes
+                        the interface and leads to a “bulky” or “fat” interface, which will affect the readability and
+                        maintainability of the code.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Dependency Inversion Principle (DIP)</h2>
+            <div class="split">
+                <div>
+                    <p>This principle or rule prevents your code from getting too tied up and makes is easier to reuse.
+                        The object of OOP is to make sure your code reusable and decency inversion is one way to achieve
+                        that goal
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
